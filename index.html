@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../quiz-game/css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="header-content">
+                <a href="../quiz-game/landing-page.html"><h3>Quiz App</h3></a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M222-255q63-44 125-67.5T480-346q71 0 133.5 23.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.81-195q-57.81 0-97.31-39.69-39.5-39.68-39.5-97.5 0-57.81 39.69-97.31 39.68-39.5 97.5-39.5 57.81 0 97.31 39.69 39.5 39.68 39.5 97.5 0 57.81-39.69 97.31-39.68 39.5-97.5 39.5Zm.66 370Q398-80 325-111.5t-127.5-86q-54.5-54.5-86-127.27Q80-397.53 80-480.27 80-563 111.5-635.5q31.5-72.5 86-127t127.27-86q72.76-31.5 155.5-31.5 82.73 0 155.23 31.5 72.5 31.5 127 86t86 127.03q31.5 72.53 31.5 155T848.5-325q-31.5 73-86 127.5t-127.03 86Q562.94-80 480.47-80Zm-.47-60q55 0 107.5-16T691-212q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480-140Zm0-370q34 0 55.5-21.5T557-587q0-34-21.5-55.5T480-664q-34 0-55.5 21.5T403-587q0 34 21.5 55.5T480-510Zm0-77Zm0 374Z"/></svg>
+            </div>
+        </header>
+        <div class="container">
+            <div id="timerDisplay" class="timer">5:00</div>
+            <!-- <h2>Quiz Game App</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim omnis blanditiis nemo perspiciatis adipisci totam dolore nostrum laboriosam nobis. Voluptas debitis eos rerum atque facere, cupiditate magnam nostrum id ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste deleniti earum provident. Dicta nobis aut dignissimos, beatae ipsum enim odit voluptatem aperiam, debitis iure culpa consectetur reprehenderit sequi sint!</p> -->
+            <p class="count">Quiz Game Count:</p>
+            
+            <form id="quizForm">
+                <div class="count" id="alwyn">
+                    <label>
+                        <input type="radio" name="questionCount" value="5"> 5 Questions
+                    </label>
+                    <label>
+                        <input type="radio" name="questionCount" value="10"> 10 Questions
+                    </label>
+                    <label>
+                        <input type="radio" name="questionCount" value="15"> 15 Questions
+                    </label>
+                </div>
+            </form>
+            
+            <div id="quizContainer" style="display:none;">
+                <div id="questions"></div>
+                <button id="prevButton" style="display:none;">Previous</button>
+                <button id="nextButton">Next</button>
+                <div id="timerDisplay"></div>
+            </div>
+            <p id="scoreDisplay"></p>
+        </div>
+    </div>
+    <script src="../quiz-game/js/functionality.js"></script>
+</body>
+</html>
